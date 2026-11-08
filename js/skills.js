@@ -23,11 +23,16 @@ const Skills = {
             return;
         }
 
-        const html = categories
-            .map((category) => Renderer.skillCategory(category))
+        const rowsHtml = categories
+            .map((category, index) => Renderer.skillCategory(category, index))
             .join('');
 
-        this.container.innerHTML = html;
+        this.container.innerHTML = `<div class="skills-panel">${rowsHtml}</div>`;
+
+        Utils.observeElements('.skill-row', 'is-visible', {
+            threshold: 0.12,
+            rootMargin: '0px 0px -40px 0px',
+        });
     },
 
     renderError() {
