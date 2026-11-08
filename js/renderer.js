@@ -166,19 +166,20 @@ const Renderer = {
      * @param {Object} category - Skill category object
      * @returns {string} HTML string
      */
-    skillCategory(category) {
+    skillCategory(category, rowIndex = 0) {
         const items = category.items
             || (category.skills || []).map((skill) => skill.name || skill);
         const tagsHtml = items
             .map((item) => `<span class="skill-chip">${Utils.sanitizeHTML(item)}</span>`)
             .join('');
+        const iconHtml = Utils.icons[category.icon] || '';
 
         return `
-            <div class="skill-category">
-                <h3 class="skill-category-title">
-                    ${Utils.icons[category.icon] || ''}
-                    ${Utils.sanitizeHTML(category.name)}
-                </h3>
+            <div class="skill-row" style="--row-index: ${rowIndex}">
+                <div class="skill-row-label">
+                    <span class="skill-row-icon" aria-hidden="true">${iconHtml}</span>
+                    <span class="skill-row-name">${Utils.sanitizeHTML(category.name)}</span>
+                </div>
                 <div class="skill-chips">
                     ${tagsHtml}
                 </div>
