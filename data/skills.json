@@ -1,101 +1,52 @@
 {
   "categories": [
     {
-      "name": "Data Engineering",
-      "icon": "database",
-      "skills": [
-        {
-          "name": "PySpark",
-          "percentage": 80
-        },
-        {
-          "name": "Apache Airflow",
-          "percentage": 55
-        },
-        {
-          "name": "ETL Pipelines",
-          "percentage": 60
-        },
-        {
-          "name": "Apache Spark",
-          "percentage": 75
-        }
-      ]
-    },
-    {
-      "name": "Programming & Databases",
+      "name": "Programming",
       "icon": "code",
-      "skills": [
-        {
-          "name": "Python",
-          "percentage": 80
-        },
-        {
-          "name": "SQL",
-          "percentage": 85
-        },
-        {
-          "name": "MySQL / SQL Server",
-          "percentage": 85
-        },
-        {
-          "name": "MongoDB",
-          "percentage": 40
-        },
-        {
-          "name": "C++",
-          "percentage": 50
-        }
+      "items": ["Java", "Python"]
+    },
+    {
+      "name": "Backend development",
+      "icon": "database",
+      "items": [
+        "Spring Boot",
+        "Spring Security",
+        "Hibernate",
+        "REST APIs"
       ]
     },
     {
-      "name": "Libraries & Analysis",
-      "icon": "bar-chart",
-      "skills": [
-        {
-          "name": "Pandas",
-          "percentage": 85
-        },
-        {
-          "name": "NumPy",
-          "percentage": 80
-        },
-        {
-          "name": "Matplotlib",
-          "percentage": 50
-        }
-      ]
+      "name": "Databases",
+      "icon": "database",
+      "items": ["MySQL", "Redis"]
     },
     {
-      "name": "Tools & Environment",
+      "name": "Messaging",
       "icon": "settings",
-      "skills": [
-        {
-          "name": "Git",
-          "percentage": 65
-        },
-        {
-          "name": "Linux",
-          "percentage": 60
-        },
-        {
-          "name": "Docker",
-          "percentage": 40
-        }
+      "items": ["RabbitMQ", "Apache Kafka (exploring)"]
+    },
+    {
+      "name": "System design",
+      "icon": "bar-chart",
+      "items": [
+        "High-level design (HLD)",
+        "Low-level design (LLD)",
+        "Distributed systems"
       ]
     },
     {
-      "name": "Problem Solving",
-      "icon": "cpu",
-      "skills": [
-        {
-          "name": "Data Structures & Algorithms",
-          "percentage": 60
-        },
-        {
-          "name": "Problem Solving",
-          "percentage": 65
-        }
+      "name": "Tools",
+      "icon": "settings",
+      "items": ["Git", "GitHub", "Docker", "Maven", "Linux"]
+    },
+    {
+      "name": "AI interests",
+      "icon": "code",
+      "items": [
+        "Large language models (LLMs)",
+        "Model Context Protocol (MCP)",
+        "AI agents",
+        "Agentic AI (exploring)"
       ]
     }
   ]

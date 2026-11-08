@@ -1,4 +1,38 @@
 {
   "projects": [
+    {
+      "id": "kinnote",
+      "title": "KINNOTE",
+      "description": "Family Story Archive — a private platform to preserve family memories through photos, stories, and personal connections. Split Spring Boot api/worker profiles, MySQL, Redis, RabbitMQ, and a React + TypeScript frontend.",
+      "image": "",
+      "tags": [
+        "Java",
+        "Spring Boot",
+        "MySQL",
+        "Redis",
+        "RabbitMQ",
+        "React",
+        "TypeScript"
+      ],
+      "githubLink": "https://github.com/zaid-mushtaq-software-engineer/KINNOTE",
+      "privateRepo": true,
+      "status": "Active development"
+    },
+    {
+      "id": "redis-engineering-lab",
+      "title": "Redis Engineering Lab",
+      "description": "Hands-on Spring Boot laboratory for cache-aside patterns, list invalidation, inventory TTL, and token-bucket rate limiting with MySQL as source of truth. Phase 1 complete with Testcontainers coverage.",
+      "image": "",
+      "tags": [
+        "Java",
+        "Spring Boot",
+        "Redis",
+        "MySQL",
+        "Docker",
+        "System design"
+      ],
+      "githubLink": "https://github.com/zaid-mushtaq-software-engineer/redis-engineering-lab",
+      "status": "Phase 1 complete"
+    }
   ]
 }

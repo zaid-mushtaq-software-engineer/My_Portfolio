@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="description" content="Zaid Mushtaq — Software Developer focused on backend engineering, distributed systems, and AI interests.">
+    <title>Zaid Mushtaq | Software Developer</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +22,7 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo" id="nav-logo">Portfolio</a>
+            <a href="#hero" class="nav-logo" id="nav-logo">Zaid Mushtaq</a>
             <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
                 <span class="hamburger"></span>
             </button>
@@ -30,8 +31,6 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#blogs" class="nav-link">Blog</a></li>
-                <li><a href="#certificates" class="nav-link">Certificates</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
@@ -133,62 +132,6 @@
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section id="blogs" class="blogs">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Blog</h2>
-                <p class="section-subtitle">Thoughts and insights</p>
-            </div>
-
-            <div class="blogs-filter">
-
-                <div class="filter-top">
-                    <div class="search-box">
-                        <input type="text" id="blog-search" placeholder="Search articles..." class="search-input">
-                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                    </div>
-
-                    <div class="sort-box">
-                        <select id="sort-blogs" class="sort-select">
-                            <option value="latest">Latest</option>
-                            <option value="oldest">Oldest</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="filter-categories" id="blog-categories"></div>
-            </div>
-
-            <div class="blogs-grid" id="blogs-grid">
-                <!-- Blog cards -->
-            </div>
-
-            <!-- ✅ ADD THIS -->
-            <div class="load-more-container">
-                <button id="load-more" class="btn btn-primary">Load More</button>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Certificates Section -->
-    <section id="certificates" class="certificates">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Certificates</h2>
-                <p class="section-subtitle">Professional certifications</p>
-            </div>
-            <div class="certificates-grid" id="certificates-grid">
-                <!-- Certificates loaded dynamically -->
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -250,8 +193,6 @@
     <script src="./js/about.js"></script>
     <script src="./js/skills.js"></script>
     <script src="./js/projects.js"></script>
-    <script src="./js/blogs.js"></script>
-    <script src="./js/certificates.js"></script>
     <script src="./js/contact.js"></script>
     <script src="./js/main.js"></script>
 </body>

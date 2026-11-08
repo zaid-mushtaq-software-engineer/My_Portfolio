@@ -66,7 +66,7 @@ const DataLoader = {
      * @returns {Promise<Object>} All loaded data
      */
     async preloadAll() {
-        const files = ['profile', 'skills', 'projects', 'blogs', 'certificates'];
+        const files = ['profile', 'skills', 'projects', 'certificates'];
         return this.loadMultiple(files);
     },
     
