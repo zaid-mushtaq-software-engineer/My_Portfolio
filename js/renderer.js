@@ -62,9 +62,18 @@ const Renderer = {
             ? `<img src="${project.image}" alt="${project.title}" class="project-image" loading="lazy">`
             : '';
         
-        const tagsHtml = project.tags
+        const tags = project.tags || [];
+        const tagsHtml = tags
             .map(tag => `<span class="project-tag">${Utils.sanitizeHTML(tag)}</span>`)
             .join('');
+        
+        const statusHtml = project.status
+            ? `<span class="project-status">${Utils.sanitizeHTML(project.status)}</span>`
+            : '';
+        
+        const privateHtml = project.privateRepo
+            ? `<span class="project-badge project-badge-private">Private repository</span>`
+            : '';
         
         const demoLinkHtml = project.demoLink 
             ? `<a href="${project.demoLink}" class="project-link" target="_blank" rel="noopener noreferrer">
@@ -82,7 +91,11 @@ const Renderer = {
             <article class="project-card" data-id="${project.id}">
                 ${imageHtml}
                 <div class="project-content">
-                    <h3 class="project-title">${Utils.sanitizeHTML(project.title)}</h3>
+                    <div class="project-title-row">
+                        <h3 class="project-title">${Utils.sanitizeHTML(project.title)}</h3>
+                        ${statusHtml}
+                    </div>
+                    ${privateHtml}
                     <p class="project-description">${Utils.sanitizeHTML(project.description)}</p>
                     <div class="project-tags">${tagsHtml}</div>
                     <div class="project-links">
@@ -154,37 +167,20 @@ const Renderer = {
      * @returns {string} HTML string
      */
     skillCategory(category) {
-        const skillsHtml = category.skills
-            .map(skill => this.skillBar(skill))
+        const items = category.items
+            || (category.skills || []).map((skill) => skill.name || skill);
+        const tagsHtml = items
+            .map((item) => `<span class="skill-chip">${Utils.sanitizeHTML(item)}</span>`)
             .join('');
-        
+
         return `
             <div class="skill-category">
                 <h3 class="skill-category-title">
                     ${Utils.icons[category.icon] || ''}
                     ${Utils.sanitizeHTML(category.name)}
                 </h3>
-                <div class="skill-list">
-                    ${skillsHtml}
-                </div>
-            </div>
-        `;
-    },
-    
-    /**
-     * Render skill progress bar
-     * @param {Object} skill - Skill object with name and percentage
-     * @returns {string} HTML string
-     */
-    skillBar(skill) {
-        return `
-            <div class="skill-item">
-                <div class="skill-header">
-                    <span class="skill-name">${Utils.sanitizeHTML(skill.name)}</span>
-                    <span class="skill-percentage">${skill.percentage}%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-progress" data-percentage="${skill.percentage}" style="width: 0%"></div>
+                <div class="skill-chips">
+                    ${tagsHtml}
                 </div>
             </div>
         `;

@@ -1,51 +1,50 @@
 {
   "name": "Zaid Mushtaq",
-  "title": "Aspiring Data Engineer | Python, SQL, PySpark & Airflow",
-  "tagline": "Building data pipelines and learning scalable data engineering systems",
+  "title": "Software Developer | Backend Engineering | AI Enthusiast",
+  "tagline": "Building reliable backend applications and scalable systems",
 
-  "description": "I am an aspiring Data Engineer focused on building data pipelines and working with modern data tools. Currently learning PySpark, Airflow, and data processing systems while practicing real-world ETL workflows. My goal is to become a skilled data engineer capable of building scalable and efficient data solutions.",
+  "description": "I'm a Software Developer focused on Java, Spring Boot, databases, and distributed systems. I enjoy designing APIs, caching, messaging, and practical system design. I'm also exploring AI engineering—LLMs, MCP, and agentic patterns for real applications.",
 
   "profileImage": "Images/profile.jpeg",
 
-
-  "location": "Srinagar, Jammu & Kashmir (Currently in Bangalore, India)",
+  "location": "Bengaluru, India",
   "email": "mushtaqzaid589@gmail.com",
   "phone": "+91 6006623071",
+  "company": "OneBill Software Private Limited",
 
   "social": {
-    "github": "https://github.com/zaid-mushtaq-data-engineer",
-    "linkedin": "https://www.linkedin.com/in/zaid-mushtaq-data-engineer"
+    "github": "https://github.com/zaid-mushtaq-software-engineer",
+    "linkedin": "https://www.linkedin.com/in/zaid-mushtaq-software-engineer/"
   },
 
   "about": {
-    "summary": "My journey into data engineering started with learning Python and SQL, which gradually led me into working with big data tools like Apache Spark and workflow orchestration using Airflow. Over time, I have been building a strong foundation in data processing and pipeline development while continuously improving my practical skills.",
+    "summary": "I'm a Software Developer interested in building reliable backend applications and scalable systems. My work centers on Spring Boot, relational databases, Redis, and messaging patterns used in production-style projects.",
 
     "paragraphs": [
-      "I am currently focusing on learning and practicing core data engineering tools such as PySpark, SQL, and Apache Airflow. I also have beginner-level exposure to Docker and understand the fundamentals of building and managing data pipelines.",
-      "Right now, I am actively working on ETL-based practice projects to strengthen my understanding of real-world data workflows, including data ingestion, transformation, and loading processes.",
-      "I believe in consistent learning and hands-on practice. My approach is to deeply understand concepts and apply them practically, so I can build scalable and production-ready data solutions in the future."
+      "I'm actively building KINNOTE (a family memory platform) and Redis Engineering Lab (a hands-on Spring Boot + Redis laboratory) while working as a Software Developer in Bengaluru.",
+      "I care about clear boundaries between services, cache invalidation, transactional workflows, and observable failure modes—not just happy-path tutorials.",
+      "I'm exploring AI engineering with a backend lens: how LLMs, MCP, and agents integrate with APIs and data you already trust."
     ],
 
     "highlights": [
       {
-        "number": "1+",
-        "label": "Years Learning"
+        "number": "2",
+        "label": "Featured builds"
       },
       {
-        "number": "0+",
-        "label": "Projects Completed"
+        "number": "Backend",
+        "label": "Primary focus"
       },
-
       {
-        "number": "2-3 hrs",
-        "label": "Daily Learning"
+        "number": "AI",
+        "label": "Exploring"
       }
     ]
   },
 
   "contact": {
-    "title": "Let’s Build Something Together",
-    "description": "I’m currently focused on learning and growing in data engineering. If you have opportunities, collaboration ideas, or just want to connect, feel free to reach out. I’d be happy to connect and learn from you.",
+    "title": "Let's connect",
+    "description": "Open to backend collaboration, code reviews, and conversations about system design or AI in production. Reach out by email or LinkedIn.",
 
     "info": [
       {
@@ -55,15 +54,9 @@
         "icon": "mail"
       },
       {
-        "type": "phone",
-        "label": "Phone",
-        "value": "+91 6006623071",
-        "icon": "phone"
-      },
-      {
         "type": "location",
         "label": "Location",
-        "value": "Bangalore, India",
+        "value": "Bengaluru, India",
         "icon": "map-pin"
       }
     ]
